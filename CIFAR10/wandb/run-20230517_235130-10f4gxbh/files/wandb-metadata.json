@@ -1,0 +1,36 @@
+{
+    "os": "Windows-10-10.0.23451-SP0",
+    "python": "3.9.7",
+    "heartbeatAt": "2023-05-17T18:21:31.182988",
+    "startedAt": "2023-05-17T18:21:30.058255",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "Artificial Intelligence/CIFAR10/Classifier.ipynb",
+    "root": "C:\\Users\\himir",
+    "host": "Tanishimir-PC",
+    "username": "himir",
+    "executable": "C:\\Users\\himir\\anaconda3\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 1801.0,
+        "min": 0.0,
+        "max": 1801.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1801.0,
+            "min": 0.0,
+            "max": 1801.0
+        }
+    ],
+    "disk": {
+        "total": 237.69171905517578,
+        "used": 193.98203659057617
+    },
+    "memory": {
+        "total": 7.918857574462891
+    }
+}
