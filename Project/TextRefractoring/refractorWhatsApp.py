@@ -1,6 +1,6 @@
 import json as JSON
 
-f = r"C:\Users\himir\TransformersResearch\TextRefractoring\WhatsApp\_chat.txt"
+f = r"C:\Users\himir\TransformersResearch\Project\TextRefractoring\WhatsApp\_chat.txt"
 chat = []
 
 with open(f, "r", encoding="utf8") as f:
@@ -10,6 +10,6 @@ with open(f, "r", encoding="utf8") as f:
             Message = text[text.find(": ")+2:]
             chat.append({P: Message})
         
-f = r"C:\Users\himir\TransformersResearch\TextRefractoring\chatWhatsApp.json"
+f = r"C:\Users\himir\TransformersResearch\Project\TextRefractoring\chatWhatsApp.json"
 with open(f, "w", encoding="utf8") as f:
     JSON.dump(chat, f, ensure_ascii=False, indent=4)
