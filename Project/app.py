@@ -1,18 +1,20 @@
-from GPT2Model.gpt2 import reply
+from GPT2Model.gpt2 import replyGPT2
+from GPTNeo.gptneo import replyGPTNeo
+from Bloom.bloom import replyBloom
+
 import json as JSON
 import random
 
-f = r"C:\Users\himir\TransformersResearch\Project\TextRefractoring\chatTelegram.json"
+f = r"Project\TextRefractoring\chatWhatsApp.json"
 
 with open(f, "r", encoding="utf8") as f:
     chat = JSON.load(f)
-    num = random.randint(0, len(chat) - 6)
-    text = list(chat[num+1].keys())[0] + ": " + chat[num+1][list(chat[num+1].keys())[0]].strip() + "\n"
-    text += list(chat[num+2].keys())[0] + ": " + chat[num+2][list(chat[num+2].keys())[0]].strip() + "\n"
-    text += list(chat[num+3].keys())[0] + ": " + chat[num+3][list(chat[num+3].keys())[0]].strip() + "\n"
-    text += list(chat[num+4].keys())[0] + ": " + chat[num+4][list(chat[num+4].keys())[0]].strip() + "\n"
-    text += list(chat[num+5].keys())[0] + ": " + chat[num+5][list(chat[num+5].keys())[0]].strip() + "\n"
+    num = random.randint(0, len(chat) - 11)
 
-    text += "Himir: "
+    text = ""
+    for i in range(10):
+        text += list(chat[num+i].keys())[0] + ": " + chat[num+i][list(chat[num+i].keys())[0]].strip() + "\n"
 
-    print(reply(text))
+    text += "Himir Desai: "
+
+    print(replyBloom(text))
