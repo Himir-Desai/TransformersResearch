@@ -1,7 +1,7 @@
 from transformers import GPT2Tokenizer, GPT2LMHeadModel
 
-tokenizer = GPT2Tokenizer.from_pretrained('gpt2-medium')
-model = GPT2LMHeadModel.from_pretrained('gpt2-medium')
+tokenizer = GPT2Tokenizer.from_pretrained('Project/models/')
+model = GPT2LMHeadModel.from_pretrained('Project/models/')
 
 def replyGPT2(text):
     encoded_input = tokenizer(text, return_tensors='pt', skip_special_tokens=True)
